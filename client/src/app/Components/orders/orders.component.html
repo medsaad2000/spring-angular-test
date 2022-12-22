@@ -1,0 +1,31 @@
+<section class="py-5 text-center container">
+
+    <h1 class="fw-light">List of Orders</h1>
+
+</section>
+
+<div class="limiter">
+
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100">
+                <table>
+                    <thead>
+                        <tr class="table100-head">
+                            <th class="column1">Reference</th>
+                            <th class="column3">Date</th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of orders">
+                            <td class="column1">{{order.reference}}</td>
+                            <td class="column3">{{order.date}} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<section class="py-5 text-center container">
+
+  <h1 class="fw-light">Add Article</h1>
+
+</section>
+<main class="form-signin w-100 m-auto">
+    <form [formGroup]="formArticle" (submit)="submit()">
+      
+      <div class="contentform">
+      
+  
+      <div class="form-floating">
+        <input formControlName="name" type="text" class="form-control" id="floatingInput" placeholder="">
+        <label for="floatingInput">Name of article</label>
+      </div>
+      <div class="form-floating">
+        <input formControlName="price" type="text" class="form-control" id="floatingPrice" placeholder="">
+        <label for="floatingPrice">Price</label>
+      </div>
+       <div class="form-floating">
+        <input formControlName="image" type="file" class="form-control" id="floatingFile" placeholder="" (change)="onFileSelected($event)">
+        
+        
+      </div> 
+  
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Add Article</button>
+    </div>
+    </form>
+  </main>
